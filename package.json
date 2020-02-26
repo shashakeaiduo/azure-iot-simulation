@@ -4,7 +4,8 @@
   "description": "Simulated device application in the IoT Hub quickstart device-to-cloud sample",
   "main": "SimulatedDevice.js",
   "scripts": {
-    "serve": "nodemon ./simulated-device.js",
+    "simulate": "nodemon ./simulated-device.js",
+    "monitor": "nodemon ./monitor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/Azure-Samples/azure-iot-samples-node#readme",
   "dependencies": {
+    "@azure/event-hubs": "^5.0.1",
     "azure-iot-device": "^1.12.2",
-    "azure-iot-device-mqtt": "^1.11.2"
+    "azure-iot-device-mqtt": "^1.11.2",
+    "moment": "^2.24.0"
   }
 }
